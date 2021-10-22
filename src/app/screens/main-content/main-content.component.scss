@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  background-color: #f8f8f8;
+  .navSetting {
+    width: 13rem;
+    min-height: 100vh;
+    background-color: purple;
+  }
+  .content-wrapper {
+    flex-grow: 1;
+    section.section.is-title-bar ul li {
+      display: inline-block;
+      padding: 0 0 0 0.75rem;
+      font-size: 1.5rem;
+      color: #7a7a7a;
+    }
+
+    section.section.is-title-bar ul li:first-child::after {
+      display: inline-block;
+      content: "/";
+      padding-left: 0.75rem;
+    }
+
+    section.section.is-title-bar {
+      padding: 1.5rem;
+      border-bottom: 1px solid rgba(24, 28, 33, 0.06);
+    }
+  }
+}
