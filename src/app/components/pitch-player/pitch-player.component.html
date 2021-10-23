@@ -1,11 +1,12 @@
-<div class="level is-mobile mb-4">
+<div class="level is-mobile level-is-shrinkable mb-4">
     <div class="level-item has-text-center" *ngFor="let player of players">
-        <div class="has-text-centered">
+        <div class="has-text-centered playerBox">
             <img class="playerImg" [src]="player.playerImgUrl">
             <div class="pitchTeamPlayerLabel">
-                <img class="kitImg" [src]="player.team.kitImgUrl">
-                <p class="heading teamName">{{player.team.name}}</p>
-                <p class="heading">{{player.secondName}}</p>
+                <!-- <img class="kitImg" [src]="player.team.kitImgUrl"> -->
+                <p class="title is-7">{{player.secondName}}</p>
+                <p class="heading">{{player.team.name}}</p>
+
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 import { ApiService } from 'src/app/services/api.service';
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './dashboard-new.component.html',
+  templateUrl: './dashboard-panic.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
