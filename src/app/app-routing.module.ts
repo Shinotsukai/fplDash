@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
+import { RememberMeGuard } from './guards/remember-me.guard';
 import { MainContentComponent } from './screens/main-content/main-content.component';
 
 const routes: Routes = [
@@ -8,7 +9,7 @@ const routes: Routes = [
   {
     path:'login',
     loadChildren:()=> import('./screens/login-screen/login-screen.module').then(m=> m.LoginScreenModule),
-    canLoad:[]
+    canLoad:[RememberMeGuard]
   },
   {
     path:'',

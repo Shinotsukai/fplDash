@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainContentComponent } from './main-content.component';
 import { RouterModule } from '@angular/router';
 import { SidebarModule } from 'src/app/components/sidebar/sidebar.module';
+import { HeaderModule } from 'src/app/components/header/header.module';
 
 
 
@@ -13,7 +14,8 @@ import { SidebarModule } from 'src/app/components/sidebar/sidebar.module';
     RouterModule.forChild([
       {path:'', pathMatch:'full',component:MainContentComponent}
     ]),
-    SidebarModule
+    SidebarModule,
+    HeaderModule
   ],
   exports:[MainContentComponent]
 })
